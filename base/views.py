@@ -8,7 +8,7 @@ rooms = [
 
 
 def home(request):
-    context = {'room': rooms}
+    context = {'rooms': rooms}
     return render(request, 'base/home.html', context)
 
 
