@@ -32,7 +32,6 @@ def createRoom(request):
             form.save()
             return redirect('home')
     context = {'form': form}
-    # return render(request, 'base/room_form.html', context)
     return render(request, 'base/room_form.html', context)
 
 
